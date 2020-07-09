@@ -311,7 +311,9 @@ function Set-AutoLogon {
 Function GetInstanceCredential {
 
     Try {
-        $Credential = Get-Credential -Credential $null
+        $User = "username/email"
+        $PWord = ConvertTo-SecureString -String "Password" -AsPlainText -Force
+        $Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $User, $PWord
         Try {
             TestCredential -Credential $Credential
             }
@@ -355,7 +357,8 @@ param (
 [switch]$DontPromptPasswordUpdateGPU
 )
 $CloudProvider = CloudProvider
-    If ($DontPromptPasswordUpdateGPU) {
+    If ($true ) {
+            GetInstanceCredential
         }
     ElseIf ($CloudProvider -eq "Paperspace") {
     }
