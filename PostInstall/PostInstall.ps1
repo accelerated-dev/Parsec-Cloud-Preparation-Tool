@@ -311,8 +311,8 @@ function Set-AutoLogon {
 Function GetInstanceCredential {
 
     Try {
-        $User = "username/email"
-        $PWord = ConvertTo-SecureString -String "Password" -AsPlainText -Force
+        $User = "Administrator"
+        $PWord = ConvertTo-SecureString -String "Accelerated-Instance2000" -AsPlainText -Force
         $Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $User, $PWord
         Try {
             TestCredential -Credential $Credential
