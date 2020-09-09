@@ -312,7 +312,7 @@ Function GetInstanceCredential {
 
     Try {
         $User = "Administrator"
-        $PWord = ConvertTo-SecureString -String "Accelerated-Instance2000" -AsPlainText -Force
+        $PWord = ConvertTo-SecureString -String "Pixel-Instance2000" -AsPlainText -Force
         $Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $User, $PWord
         Try {
             TestCredential -Credential $Credential
