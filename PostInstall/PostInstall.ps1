@@ -821,7 +821,7 @@ Function StartGPUUpdate {
     if ($DontPromptPasswordUpdateGPU) {
         }
     Else {
-      ..\..\..\AppData\Roaming\ParsecLoader\GPUUpdaterTool.ps1
+      C:\Users\Administrator\Desktop\scripts\GPUUpdaterTool.ps1
         }
     }
 Write-Host -foregroundcolor red "
