@@ -49,8 +49,10 @@
                     Google P4  VW    (Tesla P4 Virtual Workstation)
                     Google T4  VW    (Tesla T4 Virtual Workstation)
     
-"                                         
+"
+start-transcript
 Write-Output "Setting up Environment"
+New-Item C:\Users\Administrator\Desktop\loader.txt
 $path = [Environment]::GetFolderPath("Desktop")
 if((Test-Path -Path $path\ParsecTemp ) -eq $true){
     } 

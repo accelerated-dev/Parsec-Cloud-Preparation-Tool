@@ -225,7 +225,11 @@ if ($system.OS_Reboot_Required -eq $true) {
     setnvsmi
     setnvsmi-shortcut
     start-sleep -s 10
+<<<<<<< HEAD
     # Restart-Computer -Force
+=======
+#     Restart-Computer -Force
+>>>>>>> cac71965a41ff3e95f20800af54e98728453d01f
     }
     Else{}
 }
