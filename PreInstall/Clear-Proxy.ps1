@@ -219,12 +219,14 @@ if ($system.OS_Reboot_Required -eq $true) {
     if ($GPU.NV_GRID -eq $false)
     {
     start-sleep -s 10
-    Restart-Computer -Force} 
+    # Restart-Computer -Force
+    } 
     ElseIf ($GPU.NV_GRID -eq $true) {
     setnvsmi
     setnvsmi-shortcut
     start-sleep -s 10
-    Restart-Computer -Force}
+    # Restart-Computer -Force
+    }
     Else{}
 }
 Else {
@@ -232,7 +234,8 @@ Else {
     setnvsmi
     setnvsmi-shortcut
     start-sleep -s 10
-    Restart-Computer -Force}
+    # Restart-Computer -Force
+    }
     ElseIf ($gpu.NV_GRID -eq $false) {
     }
     Else{}
