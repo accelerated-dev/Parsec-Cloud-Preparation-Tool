@@ -580,15 +580,15 @@ function disable-recent-start-menu {
 
 #createshortcut
 function Create-AutoShutdown-Shortcut{
-    ProgressWriter -Status "Creating auto shutdown shortcut" -PercentComplete $PercentComplete
-    $Shell = New-Object -ComObject ("WScript.Shell")
-    $ShortCut = $Shell.CreateShortcut("$env:USERPROFILE\Desktop\Setup Auto Shutdown.lnk")
-    $ShortCut.TargetPath="powershell.exe"
-    $ShortCut.Arguments='-ExecutionPolicy Bypass -File "%homepath%\AppData\Roaming\ParsecLoader\CreateAutomaticShutdownScheduledTask.ps1"'
-    $ShortCut.WorkingDirectory = "$env:USERPROFILE\AppData\Roaming\ParsecLoader";
-    $ShortCut.WindowStyle = 0;
-    $ShortCut.Description = "ClearProxy shortcut";
-    $ShortCut.Save()
+    # ProgressWriter -Status "Creating auto shutdown shortcut" -PercentComplete $PercentComplete
+    # $Shell = New-Object -ComObject ("WScript.Shell")
+    # $ShortCut = $Shell.CreateShortcut("$env:USERPROFILE\Desktop\Setup Auto Shutdown.lnk")
+    # $ShortCut.TargetPath="powershell.exe"
+    # $ShortCut.Arguments='-ExecutionPolicy Bypass -File "%homepath%\AppData\Roaming\ParsecLoader\CreateAutomaticShutdownScheduledTask.ps1"'
+    # $ShortCut.WorkingDirectory = "$env:USERPROFILE\AppData\Roaming\ParsecLoader";
+    # $ShortCut.WindowStyle = 0;
+    # $ShortCut.Description = "ClearProxy shortcut";
+    # $ShortCut.Save()
     }
 
 #createshortcut

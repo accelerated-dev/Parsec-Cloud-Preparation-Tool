@@ -40,11 +40,11 @@ Unregister-ScheduledTask -TaskName "Recover GPU Driver and Remove Proxy" -Confir
 }
 catch {}
 
-$action = New-ScheduledTaskAction -Execute 'C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe' -Argument '-file %appdata%\ParsecLoader\clear-proxy.ps1'
+# $action = New-ScheduledTaskAction -Execute 'C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe' -Argument '-file %appdata%\ParsecLoader\clear-proxy.ps1'
 
-$trigger =  New-ScheduledTaskTrigger -AtLogOn -User $env:USERNAME 
+# $trigger =  New-ScheduledTaskTrigger -AtLogOn -User $env:USERNAME 
 
-Register-ScheduledTask -Action $action -Trigger $trigger -TaskName "Recover GPU Driver and Remove Proxy" -Description "This task reinstalls or re-enables the GPU and clears any Windows Proxies" -RunLevel Highest
+# Register-ScheduledTask -Action $action -Trigger $trigger -TaskName "Recover GPU Driver and Remove Proxy" -Description "This task reinstalls or re-enables the GPU and clears any Windows Proxies" -RunLevel Highest
 }
 
 setup
