@@ -62,7 +62,6 @@ function AutomaticShutdown {
 	}
 	
     $button_logic = {
-    Start-Process powershell.exe -ArgumentList "-ExecutionPolicy Bypass -windowstyle hidden -file $ENV:APPDATA\ParsecLoader\Automatic-Shutdown.ps1"
     $form1.Close()
     }
 

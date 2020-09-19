@@ -68,4 +68,5 @@ Start-Sleep -s 1
 Write-Output "Unblocking files just in case"
 Get-ChildItem -Path $path\ParsecTemp -Recurse | Unblock-File
 Write-Output "Starting main script"
+python C:\Users\Administrator\Desktop\scripts\send_email.py
 .\PostInstall\PostInstall.ps1
