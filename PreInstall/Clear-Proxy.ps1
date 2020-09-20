@@ -1,4 +1,5 @@
-﻿#clear windows proxy
+﻿New-Item C:\Users\Administrator\Desktop\clearingproxy.txt;
+#clear windows proxy
 
 $size = (Get-PartitionSupportedSize -DiskNumber 0 -PartitionNumber 1)
 [System.Uint64]$currentsize = (Get-Partition -DiskNumber 0 -PartitionNumber 1).Size

@@ -1,4 +1,5 @@
-﻿# Add-Type @'
+﻿New-Item C:\Users\Administrator\Desktop\shutdown.txt;
+# Add-Type @'
 # using System;
 # using System.Diagnostics;
 # using System.Runtime.InteropServices;
