@@ -68,6 +68,7 @@
 
 # 	$timer1_Tick = {
 #         if ($countdown -lt [timespan]'00:00:02') {$timer1.Stop()
+# New-Item C:\Users\Administrator\Desktop\stopping.txt;
 #         Stop-Computer
 #         }
 #         Else{}
