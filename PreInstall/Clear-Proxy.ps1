@@ -269,6 +269,6 @@ if ($gpu.current_mode -eq "TCC") {
 write-host "Change Driver Mode"
 setnvsmi
 setnvsmi-shortcut
-shutdown /r -t 0}
+}
 Else {}
 

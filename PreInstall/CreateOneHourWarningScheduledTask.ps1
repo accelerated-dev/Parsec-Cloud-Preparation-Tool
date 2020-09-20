@@ -45,11 +45,11 @@ try {
 catch {
     }
 
-$action = New-ScheduledTaskAction -Execute 'C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe' -Argument '-executionpolicy bypass -windowstyle hidden -file %appdata%\ParsecLoader\WarningMessage.ps1'
+# $action = New-ScheduledTaskAction -Execute 'C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe' -Argument '-executionpolicy bypass -windowstyle hidden -file %appdata%\ParsecLoader\WarningMessage.ps1'
 
-$trigger =  New-ScheduledTaskTrigger -AtLogOn -User $env:USERNAME 
+# $trigger =  New-ScheduledTaskTrigger -AtLogOn -User $env:USERNAME 
 
-Register-ScheduledTask -Action $action -Trigger $trigger -TaskName "One Hour Warning Message" -Description "This will warn you 5 minutes before you're billed for another hour" -RunLevel Highest
+# Register-ScheduledTask -Action $action -Trigger $trigger -TaskName "One Hour Warning Message" -Description "This will warn you 5 minutes before you're billed for another hour" -RunLevel Highest
 
 Write-Output "Successfully Created"
 
