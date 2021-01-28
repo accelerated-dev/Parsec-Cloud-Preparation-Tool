@@ -819,7 +819,7 @@ Function StartGPUUpdate {
     if ($DontPromptPasswordUpdateGPU) {
         }
     Else {
-      C:\Users\Administrator\Desktop\scripts\GPUUpdaterTool.ps1 
+      C:\Users\Administrator\cloud\scripts\installation\GPUUpdaterTool.ps1 
         }
     }
 Write-Host -foregroundcolor red "
